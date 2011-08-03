@@ -287,3 +287,36 @@
 			</div>
 		</div>
 	</code>
+
+
+	11. Make the simple chord with inactive strings (C)
+
+	<code>
+		<div class="b-neck b-neck_type_part">
+			<div class="b-neck__fretboard SingleVI">
+				<div class="b-neck__frets">
+					<div class="b-neck__fret Nut"></div>
+					<div class="b-neck__fret I"></div>
+					<div class="b-neck__fret II"></div>
+					<div class="b-neck__fret III"></div>
+					<div class="b-neck__fret IV"></div>
+					<div class="b-neck__fret V"></div>
+				</div>
+
+				<div class="b-neck__strings">
+					<div class="b-neck__string I   E"></div>
+					<div class="b-neck__string II  H"></div>
+					<div class="b-neck__string III G"></div>
+					<div class="b-neck__string IV  D"></div>
+					<div class="b-neck__string V   A"></div>
+					<div class="b-neck__string VI  E Inactive"></div>
+				</div>
+
+				<div class="b-neck__hand">
+					<div class="b-neck__finger I   AtII ToI"></div>
+					<div class="b-neck__finger II  AtIV ToII"></div>
+					<div class="b-neck__finger III AtV  ToIII"></div>
+				</div>
+			</div>
+		</div>
+	</code>
