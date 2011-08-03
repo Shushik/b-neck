@@ -1,0 +1,656 @@
+/**
+ * CSS library for displaying guitar neck and chords
+ *
+ * @author  Shushik <silkleopard@yandex.ru>
+ * @version 3.0
+ */
+
+/* Main wrapper (begin) *//**/
+.b-neck
+{
+	font-family: Times, serif;
+	font-size: 0;
+	line-height: 0;
+
+	width: 890px;
+	padding: 20px 35px;
+	margin: 0 auto;
+
+	background: #FFF;
+	color: #000;
+	border: #666 solid 1px;
+}
+
+
+.b-neck_type_part
+{
+	width: 415px;
+}
+
+.b-neck_type_part .b-neck__fretboard
+{
+	width: 410px
+}
+
+.b-neck_type_part .b-neck__fret:first-child:before
+{
+	content: '';
+}
+
+
+.b-neck .SingleIII .b-neck__fret
+{
+	height: 55px;
+}
+
+.b-neck .SingleIV .b-neck__fret
+{
+	height: 74px;
+}
+
+.b-neck .SingleV .b-neck__fret
+{
+	height: 94px;
+}
+
+.b-neck .SingleVI .b-neck__fret
+{
+	height: 115px;
+}
+
+.b-neck .SingleVII .b-neck__fret
+{
+	height: 136px;
+}
+
+.b-neck .BassIII .b-neck__fret
+{
+	height: 59px;
+}
+
+.b-neck .BassIV .b-neck__fret
+{
+	height: 81px;
+}
+
+.b-neck .BassV .b-neck__fret
+{
+	height: 102px;
+}
+
+.b-neck .BassVI .b-neck__fret
+{
+	height: 124px;
+}
+
+
+.b-neck .SingleIII .b-neck__strings .III,
+.b-neck .SingleIV .b-neck__strings .IV,
+.b-neck .SingleV .b-neck__strings .IV,
+.b-neck .SingleV .b-neck__strings .V,
+.b-neck .SingleVI .b-neck__strings .IV,
+.b-neck .SingleVI .b-neck__strings .V,
+.b-neck .SingleVII .b-neck__strings .IV,
+.b-neck .SingleVII .b-neck__strings .V,
+.b-neck .BassIII .b-neck__strings .b-neck__string,
+.b-neck .BassIV .b-neck__strings .b-neck__string,
+.b-neck .BassV .b-neck__strings .b-neck__string,
+.b-neck .BassVI .b-neck__strings .b-neck__string
+{
+	padding-top: 2px;
+}
+
+.b-neck .SingleVI .b-neck__strings .VI,
+.b-neck .SingleVII .b-neck__strings .VI,
+.b-neck .SingleVII .b-neck__strings .VII,
+.b-neck .BassIII .b-neck__strings .III,
+.b-neck .BassIV .b-neck__strings .III,
+.b-neck .BassV .b-neck__strings .III,
+.b-neck .BassV .b-neck__strings .IV,
+.b-neck .BassVI .b-neck__strings .III,
+.b-neck .BassVI .b-neck__strings .IV
+{
+	padding-top: 3px;
+}
+
+.b-neck .BassIV .b-neck__strings .IV,
+.b-neck .BassV .b-neck__strings .V,
+.b-neck .BassVI .b-neck__strings .V,
+.b-neck .BassVI .b-neck__strings .VI
+{
+	padding-top: 4px;
+}
+
+
+.b-neck .BassIII .b-neck__hand .AtII,
+.b-neck .BassIV .b-neck__hand .AtII,
+.b-neck .BassV .b-neck__hand .AtII,
+.b-neck .BassVI .b-neck__hand .AtII
+{
+	margin-top: 22px;
+}
+
+.b-neck .BassIII .b-neck__hand .AtIII,
+.b-neck .BassIV .b-neck__hand .AtIII,
+.b-neck .BassV .b-neck__hand .AtIII,
+.b-neck .BassVI .b-neck__hand .AtIII
+{
+	margin-top: 42px;
+}
+
+.b-neck .BassIII .b-neck__hand .AtIV,
+.b-neck .BassIV .b-neck__hand .AtIV,
+.b-neck .BassV .b-neck__hand .AtIV,
+.b-neck .BassVI .b-neck__hand .AtIV
+{
+	margin-top: 62px;
+}
+
+.b-neck .BassIII .b-neck__hand .AtV,
+.b-neck .BassIV .b-neck__hand .AtV,
+.b-neck .BassV .b-neck__hand .AtV,
+.b-neck .BassVI .b-neck__hand .AtV
+{
+	margin-top: 85px;
+}
+
+.b-neck .BassIII .b-neck__hand .AtVI,
+.b-neck .BassIV .b-neck__hand .AtVI,
+.b-neck .BassV .b-neck__hand .AtVI,
+.b-neck .BassVI .b-neck__hand .AtVI
+{
+	margin-top: 107px;
+}
+/* Main wrapper (end) *//**/
+
+
+/* Headers and comments (begin) */ /**/
+.b-neck__h1,
+.b-neck__h2,
+.b-neck__comment
+{
+	line-height: 1.2em;
+}
+
+.b-neck__h1,
+.b-neck__h2
+{
+	font-size: 24px;
+
+	margin: 0.5em 0;
+}
+
+.b-neck__h1
+{
+	margin-top: 0;
+}
+
+.b-neck__h2
+{
+	margin-bottom: 0;
+}
+
+.b-neck__comment
+{
+	font-size: 14px;
+
+	margin-top: 0.5em;
+}
+/* Headers and comments (end) */ /**/
+
+
+/* Fretboard (begin) */ /**/
+.b-neck__fretboard
+{
+	position: relative;
+
+	width: 885px;
+}
+/* Fretboard (end) */ /**/
+
+
+/* Fret (begin) */ /**/
+.b-neck__fret
+{
+	float: left;
+	position: relative;
+
+	width: 2px;
+	padding: 0;
+	margin: 0 65px 0 0;
+
+	color: #F88;
+	background: #000;
+}
+
+.b-neck__fret:before
+{
+	font-size: 12px;
+
+	line-height: 1em;
+
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0.5em;
+}
+/* Fret (end) */ /**/
+
+
+/* Frets (begin) */ /**/
+.b-neck__frets:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.b-neck__frets .Nut
+{
+	width: 4px;
+}
+
+.b-neck__frets .I:before
+{
+	content: 'I';
+}
+
+.b-neck__frets .II:before
+{
+	content: 'II';
+}
+
+.b-neck__frets .III:before
+{
+	content: 'III';
+}
+
+.b-neck__frets .IV:before
+{
+	content: 'IV';
+}
+
+.b-neck__frets .V:before
+{
+	content: 'V';
+}
+
+.b-neck__frets .VI:before
+{
+	content: 'VI';
+}
+
+.b-neck__frets .VII:before
+{
+	content: 'VII';
+}
+
+.b-neck__frets .VIII:before
+{
+	content: 'VIII';
+}
+
+.b-neck__frets .IX:before
+{
+	content: 'IX';
+}
+
+.b-neck__frets .X:before
+{
+	content: 'X';
+}
+
+.b-neck__frets .XI:before
+{
+	content: 'XI';
+}
+
+.b-neck__frets .XII:before
+{
+	content: 'XII';
+}
+/* Frets (end) */ /**/
+
+
+/* String (begin) */ /**/
+.b-neck__string
+{
+	position: relative;
+
+	padding-top: 1px;
+	margin: 18px 0;
+
+	color: #000;
+	background: #BBB;
+	border-width: 0;
+}
+
+.b-neck__string:before
+{
+	font-size: 14px;
+	line-height: 1.2em;
+
+	display: block;
+	position: absolute;
+	top: -0.5em;
+	left: -1.5em;
+}
+/* String (end) */ /**/
+
+
+/* Strings (begin) */ /**/
+.b-neck__strings
+{
+	position: absolute;
+	top: -11px;
+	left: 0;
+
+	width: 100%;
+}
+
+
+.b-neck__strings .A♭:before
+{
+	content: 'A♭';
+}
+
+.b-neck__strings .A:before
+{
+	content: 'A';
+}
+
+.b-neck__strings .B:before
+{
+	content: 'B';
+}
+
+.b-neck__strings .H:before
+{
+	content: 'H';
+}
+
+.b-neck__strings .C♭:before
+{
+	content: 'C♭';
+}
+
+.b-neck__strings .C:before
+{
+	content: 'C';
+}
+
+.b-neck__strings .C♯:before
+{
+	content: 'C♯';
+}
+
+.b-neck__strings .D♭:before
+{
+	content: 'D♭';
+}
+
+.b-neck__strings .D:before
+{
+	content: 'D';
+}
+
+.b-neck__strings .D♯:before
+{
+	content: 'D♯';
+}
+
+.b-neck__strings .E♭:before
+{
+	content: 'E♭';
+}
+
+.b-neck__strings .E:before
+{
+	content: 'E';
+}
+
+.b-neck__strings .E♯:before
+{
+	content: 'E♯';
+}
+
+.b-neck__strings .F♭:before
+{
+	content: 'F♭';
+}
+
+.b-neck__strings .F:before
+{
+	content: 'F';
+}
+
+.b-neck__strings .F♯:before
+{
+	content: 'F♯';
+}
+
+.b-neck__strings .G♭:before
+{
+	content: 'G♭';
+}
+
+.b-neck__strings .G:before
+{
+	content: 'G';
+}
+
+.b-neck__strings .G♯:before
+{
+	content: 'G♯';
+}
+
+
+.b-neck__strings .Active
+{
+	background: #0C0;
+	color: #0C0;
+}
+
+
+.b-neck__strings .Inactive
+{
+	background: #F0F0F0;
+}
+
+.b-neck__strings .Inactive:before
+{
+	content: '×';
+
+	color: #F00;
+}
+/* Strings (end) */ /**/
+
+
+/* Hand fingers (begin) */ /**/
+.b-neck__hand
+{
+	height: 0;
+	margin-left: 35px;
+}
+
+
+.b-neck__hand .I:before
+{
+	content: '1';
+}
+
+.b-neck__hand .II:before
+{
+	content: '2';
+}
+
+.b-neck__hand .III:before
+{
+	content: '3';
+}
+
+.b-neck__hand .IV:before
+{
+	content: '4';
+}
+
+.b-neck__hand .V:before
+{
+	content: '0';
+}
+
+
+.b-neck__hand .AtII
+{
+	margin-top: 20px;
+}
+
+.b-neck__hand .AtIII
+{
+	margin-top: 39px;
+}
+
+.b-neck__hand .AtIV
+{
+	margin-top: 59px;
+}
+
+.b-neck__hand .AtV
+{
+	margin-top: 79px;
+}
+
+.b-neck__hand .AtVI
+{
+	margin-top: 99px;
+}
+
+.b-neck__hand .AtVII
+{
+	margin-top: 120px;
+}
+
+
+.b-neck__hand .ToII
+{
+	margin-left: 100px;
+}
+
+.b-neck__hand .ToIII
+{
+	margin-left: 168px;
+}
+
+.b-neck__hand .ToIV
+{
+	margin-left: 235px;
+}
+
+.b-neck__hand .ToV
+{
+	margin-left: 302px;
+}
+
+.b-neck__hand .ToVI
+{
+	margin-left: 370px;
+}
+
+.b-neck__hand .ToVII
+{
+	margin-left: 438px;
+}
+
+.b-neck__hand .ToVIII
+{
+	margin-left: 505px;
+}
+
+.b-neck__hand .ToIX
+{
+	margin-left: 570px;
+}
+
+.b-neck__hand .ToX
+{
+	margin-left: 640px;
+}
+
+.b-neck__hand .ToXI
+{
+	margin-left: 705px;
+}
+
+.b-neck__hand .ToXII
+{
+	margin-left: 774px;
+}
+
+
+.b-neck__hand .BarreII
+{
+	height: 20px;
+}
+
+.b-neck__hand .BarreIII
+{
+	height: 38px;
+}
+
+.b-neck__hand .BarreIV
+{
+	height: 58px;
+}
+
+.b-neck__hand .BarreV
+{
+	height: 80px;
+}
+
+.b-neck__hand .BarreVI
+{
+	height: 100px;
+}
+
+.b-neck__hand .BarreVII
+{
+	height: 122px;
+}
+/* Hand fingers (end) */ /**/
+
+
+/* Hand finger (begin) */ /**/
+.b-neck__finger
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding: 4px;
+	margin: 2px 0 0 35px;
+
+	color: #FC6;
+	background: #FC6;
+	border: #500 solid 2px;
+
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.b-neck__finger:before
+{
+	font-size: 12px;
+
+	line-height: 1.2em;
+
+	display: block;
+	position: absolute;
+	top: -1em;
+	left: -0.8em;
+
+	color: #000;
+}
+/* Hand finger (end) */ /**/
